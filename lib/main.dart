@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: const Text('Nozhati app')),
-        body: const Center(child: Text('Welcom to Nozhati app')),
+        body: const Center(child: Text('Welcom to Nozhati')),
       ),
     );
   }
