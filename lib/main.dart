@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nozhati/screen/authentication/signup_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: const Text('Nozhati app')),
-        body: const Center(child: Text('Welcom to Nozhati')),
+        body: SignupScreen()
       ),
     );
   }
