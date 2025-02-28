@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nozhati/screen/authentication/signup_screen.dart';
+import 'package:nozhati/screen/authentication/signin_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: SignupScreen()
+        body: SigninScreen()
       ),
     );
   }
