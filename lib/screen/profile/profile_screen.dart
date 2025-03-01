@@ -103,7 +103,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 leading: Icons.logout,
                 title: "Sign-out",
                 onTap: () {
-                  Navigator.of(context).pop();
+                  Navigator.of(context).pushReplacementNamed("signin_screen");
                 },
               ),
             ],
