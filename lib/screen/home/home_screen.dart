@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nozhati/shared/widget/appbar_widget.dart';
+import 'package:nozhati/shared/widget/navbar_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -18,6 +20,15 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: const Text('Home')));
+    return Scaffold(
+      appBar: AppBarWidget(title: "Home"),
+      body: Center(
+        child: Text('Home Screen'),
+      ),
+      bottomNavigationBar: NavBarWidget(
+        selectedIndex: _selectedIndex,
+        onItemTapped: _onItemTapped,
+      ),
+    );
   }
 }
