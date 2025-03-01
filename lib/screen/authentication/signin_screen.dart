@@ -22,7 +22,7 @@ class _SigninScreenState extends State<SigninScreen> {
               children: [
                 SizedBox(height: 30),
                 Text(
-                  "Sign-up",
+                  "Sign-in",
                   style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 10),
@@ -57,14 +57,22 @@ class _SigninScreenState extends State<SigninScreen> {
                 ),
                 SizedBox(height: 10),
 
-                ButtonWidget(label: "Sign-in", onPressed: () {}),
+                ButtonWidget(
+                  size: Size(MediaQuery.of(context).size.width, 60),
+                  label: "Sign-in",
+                  onPressed: () {
+                    Navigator.of(context).pushReplacementNamed('home_screen');
+                  },
+                ),
                 SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Don't have an account?"),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.of(context).pushNamed('signup_screen');
+                      },
                       child: Text(
                         "Sign-up",
                         style: TextStyle(

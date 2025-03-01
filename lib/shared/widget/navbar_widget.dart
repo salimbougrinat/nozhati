@@ -25,7 +25,10 @@ class NavBarWidget extends StatelessWidget {
           icon: Icon(Icons.location_on_outlined),
           label: 'Map',
         ),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+        BottomNavigationBarItem(
+          icon: Icon(Icons.person_outline),
+          label: 'Profile',
+        ),
       ],
       currentIndex: selectedIndex,
       unselectedItemColor: Colors.grey,

@@ -69,7 +69,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                           ],
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushNamed("profileedit_screen");
+                        },
                       ),
                     ],
                   ),
@@ -100,7 +102,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
               SettingChoiceWidget(
                 leading: Icons.logout,
                 title: "Sign-out",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pop();
+                },
               ),
             ],
           ),

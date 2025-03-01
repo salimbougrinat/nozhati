@@ -4,6 +4,7 @@ import 'package:nozhati/screen/authentication/signup_screen.dart';
 import 'package:nozhati/screen/home/home_screen.dart';
 import 'package:nozhati/screen/map/map_screen.dart';
 import 'package:nozhati/screen/profile/profile_screen.dart';
+import 'package:nozhati/screen/profile/profileedit_screen.dart';
 import 'package:nozhati/screen/search/search_screen.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: ProfileScreen()),
+      home: Scaffold(body: SignupScreen()),
       routes: {
         'signup_screen': (context) => const SignupScreen(),
         'signin_screen': (context) => const SigninScreen(),
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         'search_screen': (context) => const SearchScreen(),
         'map_screen': (context) => const MapScreen(),
         'profile_screen': (context) => const ProfileScreen(),
+        'profileedit_screen': (context) => const ProfileEditScreen(),
       },
     );
   }
