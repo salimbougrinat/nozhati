@@ -29,7 +29,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 children: [
                   CircleAvatar(
                     radius: 50,
-                    backgroundImage: AssetImage('assets/images/logo.png'),
+                    backgroundImage: AssetImage(''),
                   ),
                   SizedBox(width: 10),
                   Column(
