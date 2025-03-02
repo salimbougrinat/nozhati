@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nozhati/screen/authentication/accounttype_screen.dart';
 import 'package:nozhati/screen/authentication/signin_screen.dart';
 import 'package:nozhati/screen/authentication/signup_screen.dart';
 import 'package:nozhati/screen/home/home_screen.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         'map_screen': (context) => const MapScreen(),
         'profile_screen': (context) => const ProfileScreen(),
         'profileedit_screen': (context) => const ProfileEditScreen(),
+        'accounttype_screen': (context) => const AccountTypeScreen(),
       },
     );
   }

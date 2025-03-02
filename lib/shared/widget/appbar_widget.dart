@@ -3,17 +3,15 @@ import 'package:nozhati/screen/setting/setting_screen.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   final String title;
-  const AppBarWidget({super.key, required this.title});
+  final VoidCallback? onPressed;
+  const AppBarWidget({super.key, required this.title, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
-        onPressed: () {
-          // Navigate back to the previous screen
-          Navigator.pop(context);
-        },
+        onPressed: onPressed ?? () => Navigator.pop(context),
       ),
       title: Text(title, style: TextStyle(fontWeight: FontWeight.bold)),
       centerTitle: true,
@@ -21,7 +19,6 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         IconButton(
           icon: Icon(Icons.settings_outlined),
           onPressed: () {
-            // Navigate to the setting screen
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => SettingScreen()),

@@ -3,13 +3,17 @@ import 'package:flutter/material.dart';
 class ButtonWidget extends StatefulWidget {
   final String label;
   final Size? size;
+  late Color? backgroundColor;
+  late Color? foregroundColor;
   final void Function() onPressed;
 
-  const ButtonWidget({
+  ButtonWidget({
     super.key,
     required this.label,
     required this.onPressed,
     this.size,
+    this.backgroundColor,
+    this.foregroundColor,
   });
 
   @override
@@ -18,14 +22,25 @@ class ButtonWidget extends StatefulWidget {
 
 class _ButtonWidgetState extends State<ButtonWidget> {
   @override
+  void initState() {
+    super.initState();
+    if (widget.backgroundColor == null) {
+      setState(() {
+        widget.backgroundColor = Colors.green;
+        widget.foregroundColor = Colors.white;
+      });
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     return SizedBox(
       child: ElevatedButton(
         onPressed: widget.onPressed,
         style: ElevatedButton.styleFrom(
           fixedSize: widget.size,
-          backgroundColor: Colors.green,
-          foregroundColor: Colors.white,
+          backgroundColor: widget.backgroundColor,
+          foregroundColor: widget.foregroundColor,
           padding: const EdgeInsets.symmetric(vertical: 15),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),

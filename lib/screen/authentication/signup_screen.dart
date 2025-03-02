@@ -62,10 +62,16 @@ class _SignupScreenState extends State<SignupScreen> {
                   onEditingComplete: () {},
                 ),
                 SizedBox(height: 10),
-                ButtonWidget(size: Size(MediaQuery.of(context).size.width,60), label: "Sign-up", onPressed: () {
-                  // Navigate to Home Screen
-                  Navigator.of(context).pushReplacementNamed('home_screen');
-                }),
+                ButtonWidget(
+                  size: Size(MediaQuery.of(context).size.width, 60),
+                  label: "Sign-up",
+                  onPressed: () {
+                    // Navigate to Home Screen
+                    Navigator.of(
+                      context,
+                    ).pushReplacementNamed('accounttype_screen');
+                  },
+                ),
                 SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

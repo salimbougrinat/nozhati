@@ -18,7 +18,11 @@ class _MapScreenState extends State<MapScreen> {
     }
 
     return Scaffold(
-      appBar: AppBarWidget(title: "Map"),
+      appBar: AppBarWidget(
+        title: "Map",
+        onPressed:
+            () => Navigator.of(context).pushReplacementNamed("home_screen"),
+      ),
       body: Center(child: Text('Map Screen')),
       bottomNavigationBar: NavBarWidget(
         selectedIndex: selectedIndex,

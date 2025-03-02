@@ -19,7 +19,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
     }
 
     return Scaffold(
-      appBar: AppBarWidget(title: 'Profile'),
+      appBar: AppBarWidget(title: 'Profile',
+        onPressed:
+            () => Navigator.of(context).pushReplacementNamed("home_screen"),
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),

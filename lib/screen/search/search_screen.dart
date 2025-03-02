@@ -18,7 +18,10 @@ class _SearchScreenState extends State<SearchScreen> {
     }
 
     return Scaffold(
-      appBar: AppBarWidget(title: "Search"),
+      appBar: AppBarWidget(title: "Search",
+        onPressed:
+            () => Navigator.of(context).pushReplacementNamed("home_screen"),
+      ),
       body: Center(child: Text('Search Screen')),
       bottomNavigationBar: NavBarWidget(
         selectedIndex: selectedIndex,
