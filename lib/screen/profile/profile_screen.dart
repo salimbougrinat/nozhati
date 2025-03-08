@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nozhati/shared/constant/app_color.dart';
 import 'package:nozhati/shared/widget/appbar_widget.dart';
 import 'package:nozhati/shared/widget/navbar_widget.dart';
 import 'package:nozhati/shared/widget/settingchoice_widget.dart';
@@ -19,7 +20,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
     }
 
     return Scaffold(
-      appBar: AppBarWidget(title: 'Profile',
+      appBar: AppBarWidget(
+        title: 'Profile',
         onPressed:
             () => Navigator.of(context).pushReplacementNamed("home_screen"),
       ),
@@ -30,10 +32,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             children: [
               Row(
                 children: [
-                  CircleAvatar(
-                    radius: 50,
-                    backgroundImage: AssetImage(''),
-                  ),
+                  CircleAvatar(radius: 50, backgroundImage: AssetImage('')),
                   SizedBox(width: 10),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -48,7 +47,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       Text(
                         '@Username',
                         style: TextStyle(
-                          color: Colors.grey,
+                          color: AppColor().primaryColor,
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
                         ),
@@ -56,16 +55,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ElevatedButton(
                         style: ButtonStyle(
                           backgroundColor: WidgetStateProperty.all(
-                            Colors.green,
+                            AppColor().primaryColor,
                           ),
                           foregroundColor: WidgetStateProperty.all(
-                            Colors.white,
+                            AppColor().primaryFontColor,
                           ),
                         ),
                         child: Row(
                           spacing: 5,
                           children: [
-                            Icon(Icons.edit, color: Colors.white),
+                            Icon(
+                              Icons.edit,
+                              color: AppColor().primaryFontColor,
+                            ),
                             Text(
                               'Edit Profile',
                               style: TextStyle(fontSize: 20),

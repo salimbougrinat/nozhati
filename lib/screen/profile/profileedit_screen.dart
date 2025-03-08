@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:nozhati/shared/widget/appbar_widget.dart';
-import 'package:nozhati/shared/widget/button_widget.dart';
-import 'package:nozhati/shared/widget/input_widget.dart';
-import 'package:nozhati/shared/widget/navbar_widget.dart';
+
+import '../../shared/widget/appbar_widget.dart';
+import '../../shared/widget/button_widget.dart';
+import '../../shared/widget/input_widget.dart';
+import '../../shared/widget/navbar_widget.dart';
 
 class ProfileEditScreen extends StatefulWidget {
   const ProfileEditScreen({super.key});

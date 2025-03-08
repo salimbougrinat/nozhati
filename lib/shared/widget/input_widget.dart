@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../constant/app_color.dart';
+
 class InputWidget extends StatelessWidget {
   final String label;
   final TextInputType keyboardType;
@@ -25,7 +27,7 @@ class InputWidget extends StatelessWidget {
           hintText: label,
           hintStyle: TextStyle(color: Colors.black54),
           filled: true,
-          fillColor: Colors.grey[20],
+          fillColor: AppColor().inputWidgetColor,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15),
             borderSide: BorderSide.none,

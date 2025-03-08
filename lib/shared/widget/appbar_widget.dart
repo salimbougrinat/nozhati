@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nozhati/screen/setting/setting_screen.dart';
+
+import '../../screen/setting/setting_screen.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   final String title;

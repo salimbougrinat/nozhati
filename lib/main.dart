@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:nozhati/screen/authentication/accounttype_screen.dart';
-import 'package:nozhati/screen/authentication/signin_screen.dart';
-import 'package:nozhati/screen/authentication/signup_screen.dart';
-import 'package:nozhati/screen/home/home_screen.dart';
-import 'package:nozhati/screen/map/map_screen.dart';
-import 'package:nozhati/screen/profile/profile_screen.dart';
-import 'package:nozhati/screen/profile/profileedit_screen.dart';
-import 'package:nozhati/screen/search/search_screen.dart';
+
+import 'screen/authentication/accounttype_screen.dart';
+import 'screen/authentication/signin_screen.dart';
+import 'screen/authentication/signup_screen.dart';
+import 'screen/home/home_screen.dart';
+import 'screen/map/map_screen.dart';
+import 'screen/profile/profile_screen.dart';
+import 'screen/profile/profileedit_screen.dart';
+import 'screen/search/search_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: SignupScreen()),
+      home: Scaffold(body: SigninScreen()),
       routes: {
         'signup_screen': (context) => const SignupScreen(),
         'signin_screen': (context) => const SigninScreen(),

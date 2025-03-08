@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nozhati/shared/widget/button_widget.dart';
-import 'package:nozhati/shared/widget/input_widget.dart';
+import '../../shared/constant/app_color.dart';
+import '../../shared/widget/button_widget.dart';
+import '../../shared/widget/input_widget.dart';
 
 class SigninScreen extends StatefulWidget {
   const SigninScreen({super.key});
@@ -47,10 +48,10 @@ class _SigninScreenState extends State<SigninScreen> {
                     "Forgot your password?",
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.green,
+                      color: AppColor().primaryColor,
                       fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
-                      decorationColor: Colors.green,
+                      decorationColor: AppColor().primaryColor,
                       decorationThickness: 2,
                     ),
                   ),
@@ -76,10 +77,10 @@ class _SigninScreenState extends State<SigninScreen> {
                       child: Text(
                         "Sign-up",
                         style: TextStyle(
-                          color: Colors.green,
+                          color: AppColor().primaryColor,
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.underline,
-                          decorationColor: Colors.green,
+                          decorationColor: AppColor().primaryColor,
                           decorationThickness: 2,
                         ),
                       ),

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../constant/app_color.dart';
+
+// ignore: must_be_immutable
 class ButtonWidget extends StatefulWidget {
   final String label;
   final Size? size;
@@ -26,8 +29,8 @@ class _ButtonWidgetState extends State<ButtonWidget> {
     super.initState();
     if (widget.backgroundColor == null) {
       setState(() {
-        widget.backgroundColor = Colors.green;
-        widget.foregroundColor = Colors.white;
+        widget.backgroundColor = AppColor().primaryColor;
+        widget.foregroundColor = AppColor().primaryFontColor;
       });
     }
   }

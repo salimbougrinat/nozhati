@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nozhati/shared/constant/app_color.dart';
 
 class NavBarWidget extends StatelessWidget {
   final int selectedIndex;
@@ -31,7 +32,7 @@ class NavBarWidget extends StatelessWidget {
         ),
       ],
       currentIndex: selectedIndex,
-      unselectedItemColor: Colors.grey,
+      unselectedItemColor: AppColor().secondaryColor,
       selectedItemColor: Colors.black,
       onTap: (index) {
         onItemTapped(index);

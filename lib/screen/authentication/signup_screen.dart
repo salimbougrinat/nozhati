@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nozhati/shared/widget/button_widget.dart';
+import '../../shared/widget/button_widget.dart';
 import 'package:nozhati/shared/widget/input_widget.dart';
 
 class SignupScreen extends StatefulWidget {

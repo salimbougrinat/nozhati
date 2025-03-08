@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nozhati/shared/widget/appbar_widget.dart';
-import 'package:nozhati/shared/widget/navbar_widget.dart';
+
+import '../../shared/widget/appbar_widget.dart';
+import '../../shared/widget/navbar_widget.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
